@@ -101,10 +101,11 @@ const Sale = () => {
 
   return (
     <>
-      <div className="sm:px-10 px-4 pt-16 pb-10 w-full min-h-screen">
+      <div className="sm:px-10 px-4 pt-10 sm:pt-16 pb-10 w-full min-h-screen">
+        {/* ----------- HEADER ----------- */}
         <div className=" header mb-6 text-black flex justify-between items-center w-full">
-          <h2 className="text-lg font-normal text-start max-w-2xl">
-            Up to 50% Off Select Styles — Like These
+          <h2 className="text-md sm:text-lg font-normal text-start max-w-2xl">
+            Look What&apos;s 30-50% Off
           </h2>
 
           <Link to="/shop" className="font-medium underline">
@@ -112,6 +113,7 @@ const Sale = () => {
           </Link>
         </div>
 
+        {/* ----------- CONTENT ----------- */}
         <div className="data w-full">
           <div className="relative">
             <Slider ref={sliderRef} {...settings}>
@@ -120,7 +122,7 @@ const Sale = () => {
                   key={data?.id}
                   className="group block overflow-hidden px-0.5"
                 >
-                  <div className="relative h-[350px] sm:h-[480px]">
+                  <div className="relative h-[390px] sm:h-[480px]">
                     <img
                       alt="product_image1"
                       className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
@@ -146,6 +148,7 @@ const Sale = () => {
               ))}
             </Slider>
 
+            {/* BUTTONS */}
             <button
               onClick={previous}
               className="ml-8 xl:ml-0 absolute top-[40%] -left-4 mx-1.5 hidden sm:inline-block rounded-full border text-black bg-[#fff] hover:text-white border-[#383838] hover:bg-[#252525] hover:border-[#252525] p-2.5 focus:outline-none"

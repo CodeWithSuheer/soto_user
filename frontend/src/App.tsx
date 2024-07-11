@@ -5,6 +5,7 @@ import HomePage from "./pages/home/HomePage";
 import Header from "./layouts/header/Header";
 import Footer from "./layouts/footer/Footer";
 import { FaArrowUp } from "react-icons/fa6";
+import ScrollHeader from "./layouts/header/ScrollHeader";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -36,6 +37,7 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
+        <ScrollHeader />
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>

@@ -8,7 +8,7 @@ interface buttonData {
 const Button = ({ text, link }: buttonData) => {
   return (
     <>
-      <Link className="px-32 py-2 bg-white text-black" to={link}>
+      <Link className="px-16 sm:px-32 py-2 bg-white text-black" to={link}>
         {text}
       </Link>
     </>
